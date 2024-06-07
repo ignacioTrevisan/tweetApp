@@ -1,0 +1,105 @@
+body {
+    height: 100%;
+}
+
+.navbar {
+    margin-left: 480px;
+    background-color: #8E8D8D;
+    font-size: 15px;
+    justify-content: center;
+    padding: 2px;
+    top: 0px;
+    position: sticky;
+    display: flex;
+    width: calc(100% - 480px);
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+    z-index: 20;
+}
+
+.navbar_comboBox {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    animation: display-comboBox linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+}
+
+.comboBox {
+    margin-left: 30px;
+    width: 250px;
+}
+
+.navbar_buttonMenu {
+    display: flex;
+    justify-content: start;
+
+}
+
+.navbar_buttonLogOut {
+    display: flex;
+    justify-content: end;
+
+}
+
+.post {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 20%;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes enhance-header {
+    to {
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(5px);
+        font-size: 5px;
+    }
+}
+
+@keyframes display-comboBox {
+    to {
+        padding: 0px;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        margin-left: 400px;
+        width: calc(100% - 400px);
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        margin-left: 320px;
+        width: calc(100% - 320px);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .comboBox {
+        margin-left: 0px;
+
+    }
+}
