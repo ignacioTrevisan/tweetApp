@@ -5,9 +5,12 @@ import React from 'react'
 export const WhiteTheme = createTheme({
     palette: {
         primary: {
-            main: '#8E8D8D'
+            main: '#D7F6FF'
         }, secondary: {
-            main: '#D9D9D9'
+            main: '#44a4be'
+        },
+        text: {
+            main: '#D4EEFF'
         }, error: {
             main: red.A400
         }, icons: {

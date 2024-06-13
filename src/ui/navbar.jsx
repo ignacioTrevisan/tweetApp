@@ -6,14 +6,12 @@ import { logOut } from '../store/auth/authSlice';
 import { useEffect } from 'react';
 
 
-export const Navbar = ({ drawerWidth = 480, Display, setDisplay }) => {
+export const Navbar = ({ Display, setDisplay }) => {
     const dispatch = useDispatch();
     const onLogout = () => {
         dispatch(logOut())
     }
-    useEffect(() => {
-        console.log(Display);
-    }, [Display])
+
 
     return (
         <AppBar

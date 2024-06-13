@@ -13,7 +13,7 @@ export const SideBarItem = ({ tweet }) => {
                         <Typography component="span" sx={{ fontSize: '0.9rem', color: 'error.main', fontWeight: 'bold' }}>
                             {tweet[1].displayName}:
                         </Typography>
-                        <Typography component="span" sx={{ fontSize: '0.9rem', color: 'text.primary' }}>
+                        <Typography component="span" sx={{ fontSize: '0.9rem', color: 'text.main', fontWeight: 'bold' }}>
                             {' ' + tweet[1].tw}
                         </Typography>
                     </>

@@ -22,7 +22,7 @@ export const Post = ({ post }) => {
 
 
 
-            <Grid container mt={4} justifyContent={'center'} mb={3} className='animate__animated animate__fadeIn'>
+            <Grid container mt={4} paddingBottom={2} paddingTop={10} justifyContent={'center'} mb={3} className='animate__animated animate__fadeIn'>
                 {post.map((p, index) => {
                     let variable = p.photoURL.length == 2
                         ? { imagen: 6, texto: 30 } //2 fotos
@@ -43,7 +43,7 @@ export const Post = ({ post }) => {
                                             fullWidth
                                             variant="outlined"
                                             sx={{
-                                                backgroundColor: 'white',
+                                                backgroundColor: 'text.main',
                                                 '& .MuiOutlinedInput-root': {
                                                     height: '70px',
                                                     display: 'flex',

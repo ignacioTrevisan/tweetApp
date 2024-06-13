@@ -48,7 +48,7 @@ export const SocialArea = () => {
     }, [ParaEfecto])
 
     return (
-        <Grid container ml={{ lg: '480px', md: '400px', sm: '320px' }} width={{ lg: `calc(100% - 480px)`, md: `calc(100% - 400px)`, sm: `calc(100% - 320px)` }} mt={3} justifyContent={'center'}>
+        <Grid container sx={{ backgroundColor: 'text.main' }} ml={{ lg: '480px', md: '400px', sm: '320px' }} width={{ lg: `calc(100% - 480px)`, md: `calc(100% - 400px)`, sm: `calc(100% - 320px)` }} mt={3} justifyContent={'center'}>
             <input
                 type={'file'}
                 ref={fileInputRef}
@@ -75,7 +75,7 @@ export const SocialArea = () => {
                                 variant="outlined"
                                 fullWidth
                                 sx={{
-                                    backgroundColor: 'white',
+                                    backgroundColor: 'text.main',
                                     height: '100px',
                                     '& .MuiOutlinedInput-root': {
                                         height: '100%',
@@ -116,7 +116,7 @@ export const SocialArea = () => {
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Grid container justifyContent={'end'}>
-                                        <Button sx={{ backgroundColor: '#2F49A5', color: 'white' }} type='submit'>
+                                        <Button sx={{ backgroundColor: 'primary.main', color: 'white' }} type='submit'>
                                             Publicar
                                         </Button>
                                     </Grid>

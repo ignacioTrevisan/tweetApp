@@ -34,7 +34,7 @@ export const SideBarListItem = ({ hash, tws, Display, setDisplay }) => {
         entries.map((title, counter) => (
 
 
-            <List sx={{ height: '100%' }} key={`list-${counter}`}>
+            <List sx={{ height: '100%', paddingLeft: { lg: 0, md: 8, sm: 19 } }} key={`list-${counter}`} >
                 <IconButton sx={{ borderRadius: '0px' }} onClick={() => handleOptionSelect(title[0])}>
 
 
@@ -44,7 +44,7 @@ export const SideBarListItem = ({ hash, tws, Display, setDisplay }) => {
 
                             <ListItemText
                                 primary={newTitle(title[0])}
-                                primaryTypographyProps={{ fontSize: '2.5rem', fontWeight: 'bold', color: 'black' }}
+                                primaryTypographyProps={{ fontSize: { lg: '2.5rem', md: '2.0rem', sm: '1.3rem' }, fontWeight: 'bold', color: 'black' }}
                             />
 
                         </Grid>
@@ -70,7 +70,7 @@ export const SideBarListItem = ({ hash, tws, Display, setDisplay }) => {
                         }
                     </Grid>
                 </IconButton>
-            </List>
+            </List >
 
 
         ))

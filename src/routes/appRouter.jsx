@@ -7,6 +7,7 @@ import { AuthRoutes } from '../auth/routes/authRoutes';
 import { TwRoutes } from '../tw/routes/twRoutes';
 import { LoadPage } from '../ui/loadPage';
 import { UseCheckStatus } from '../hooks/useCheckStatus';
+import { Grid } from '@mui/material';
 
 export const AppRouter = () => {
 
@@ -15,7 +16,7 @@ export const AppRouter = () => {
         return <LoadPage />
     }
     return (
-        <>
+        <Grid sx={{ backgroundColor: '#D4EEFF' }}>
             <Routes>
 
                 {
@@ -27,6 +28,6 @@ export const AppRouter = () => {
                     status !== 'logged' && <Route path='/*' element={<Navigate to='/auth/login' />} />
                 }
             </Routes>
-        </>
+        </Grid>
     )
 }
