@@ -30,7 +30,7 @@ export const Post = ({ post }) => {
                             ? { imagen: 9, texto: 42 }  //una foto
                             : { imagen: 11, texto: 50, height: 8 } //sin fotos
                     return (
-                        <Grid item xs={11} key={index} mt={2} sx={{ backgroundColor: 'primary.main', height: { sm: `${variable.heigth}rem`, md: '8rem' } }}>
+                        <Grid item xs={11} key={index} mt={2} sx={{ backgroundColor: 'primary.main', borderRadius: '5px', height: { sm: `${variable.heigth}rem`, md: '8rem' } }}>
                             <div className='post '>
                                 <Grid container ml={2}>
                                     <Grid item xs={12}>

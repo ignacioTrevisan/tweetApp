@@ -129,7 +129,7 @@ export const SocialArea = () => {
 
 
                 </Grid >
-                <Grid display={ParaEfecto !== true ? 'none' : ''} item sx={{ backgroundColor: 'secondary.main', width: { xl: '900px', lg: '650px', md: '470px', sm: '300px' } }} >
+                <Grid display={ParaEfecto !== true ? 'none' : ''} item sx={{ backgroundColor: 'secondary.main', borderRadius: '5px', width: { xl: '900px', lg: '650px', md: '470px', sm: '300px' } }} >
                     <Post post={tweetsFilter} />
                 </Grid>
             </form>
